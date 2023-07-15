@@ -1,11 +1,16 @@
-const app = require("express")()
+const connectDB = require("./config/db")
+require("dotenv").config()
+const PORT = process.env.PORT
 
+connectDB()
+
+const app = require("express")()
 app.get("/", (req, res) => {
   res.send("success!")
 })
-app.listen(5000, () => {
+app.listen(PORT, () => {
   try {
-    console.log("listening on on port 5000")
+    console.log(`listening on port ${PORT}`)
   } catch (err) {
     console.log(err)
   }
