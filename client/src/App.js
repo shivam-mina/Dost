@@ -1,5 +1,6 @@
 import { Routes, Route } from 'react-router-dom'
 import { Login, Signup, Home } from './Pages'
+import './App.css'
 
 function App() {
   return (

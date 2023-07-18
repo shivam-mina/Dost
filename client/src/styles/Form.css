@@ -1,0 +1,19 @@
+.form {
+  text-align: center;
+  background-color: #253a47;
+  width: 30%;
+  margin: auto;
+  margin-top: 10%;
+  padding: 1%;
+  border-radius: 1.5%;
+}
+
+.logo-img {
+  width: auto;
+  height: 100px;
+}
+.form-field {
+  color: #66a3bb;
+  font-weight: bold;
+  padding: 2%;
+}

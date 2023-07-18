@@ -1,8 +1,11 @@
 import React from 'react'
+import "../styles/Header.css"
 
 function Header() {
   return (
-    <div>Header of dost app</div>
+    <div className='header'>
+      DOST
+      </div>
   )
 }
 

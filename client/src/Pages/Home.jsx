@@ -2,7 +2,7 @@ import React from 'react'
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <div style={{fontSize:"100px",textAlign:"center"}}>WELCOME DOST</div>
   )
 }
 
