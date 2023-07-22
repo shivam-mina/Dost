@@ -21,14 +21,11 @@ const Home = () => {
       )
       const { status, user } = data
       setUsername(user)
-      return (
-        status
-          ? toast(`Hello ${user}`, {
-              position: 'top-right',
-            })
-          : removeCookie('token'),
-        navigate('/login')
-      )
+      return status
+        ? toast(`Hello ${user}`, {
+            position: 'top-right',
+          })
+        : removeCookie('token')
     }
     verifyCookie()
   }, [cookies, navigate, removeCookie])
@@ -37,12 +34,20 @@ const Home = () => {
     removeCookie('token')
     navigate('/signup')
   }
+  const Chat = () => {
+    navigate('/chat')
+  }
   return (
     <div>
       <Header />
       <div style={{ fontSize: '80px', textAlign: 'center' }}>
         Welcome <span>{username}</span> , Let's Talk
-        <button onClick={Logout}>LOGOUT</button>
+        <div>
+          <button onClick={Logout}>LOGOUT</button>
+        </div>
+        <div>
+          <button onClick={Chat}>Chat Here</button>
+        </div>
       </div>
       <ToastContainer />
     </div>
