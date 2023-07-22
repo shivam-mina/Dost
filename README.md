@@ -4,4 +4,4 @@ Features Inplemented :
 - Also added cookies for login
 
   # Issues right now
-  -rate Limiting of openai models leading to halt in progress.
+  - Rate Limiting of openai models leading to halt in progress.
